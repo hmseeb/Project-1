@@ -1,12 +1,10 @@
 import 'package:brain_bite/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-
 import '../utils/app_layout.dart';
 
 class Search extends StatelessWidget {
   const Search({super.key});
-
   @override
   Widget build(BuildContext context) {
     final size = AppLayout.getSize(context);
@@ -152,6 +150,131 @@ class Search extends StatelessWidget {
                   ],
                 ),
                 Gap(AppLayout.getHeight(40)),
+                Container(
+                  decoration: BoxDecoration(color: Styles.bgColor),
+                  width: AppLayout.getWidth(370),
+                  height: 400,
+                  child: Row(
+                    children: [
+                      Container(
+                        width: size.width * 0.40,
+                        padding: EdgeInsets.all(AppLayout.getHeight(14)),
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(21)),
+                        child: Column(
+                          // mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Column(
+                              children: [
+                                Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(
+                                        AppLayout.getHeight(21)),
+                                    image: const DecorationImage(
+                                        image:
+                                            AssetImage('assets/images/sit.jpg'),
+                                        fit: BoxFit.cover),
+                                  ),
+                                  child: SizedBox(
+                                    width: AppLayout.getHeight(200),
+                                    height: AppLayout.getHeight(200),
+                                  ),
+                                ),
+                                Gap(AppLayout.getHeight(20)),
+                                Text(
+                                  '20% discount\non bussiness\nclass\ntickets from\nAirlines On\nInternational',
+                                  style: Styles.headLineStyle4,
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+
+                      Gap(AppLayout.getHeight(20)),
+                      Column(
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.symmetric(vertical: 14),
+                            width: size.width * 0.40,
+                            height: AppLayout.getHeight(190),
+                            decoration: BoxDecoration(
+                                color: Colors.cyan[600],
+                                borderRadius: BorderRadius.circular(21)),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Discount\nfor survey',
+                                  style: Styles.headLineStyle2.copyWith(
+                                    color: Colors.white60,
+                                  ),
+                                ),
+                                Gap(AppLayout.getHeight(6)),
+                                Text(
+                                  textAlign: TextAlign.left,
+                                  'Take the survey\nabout our\nservices and\nget a discount',
+                                  style: Styles.textStyle.copyWith(
+                                      fontSize: 17,
+                                      color: Colors.white60,
+                                      fontWeight: FontWeight.bold),
+                                )
+                              ],
+                            ),
+                          ),
+                          Gap(AppLayout.getHeight(20)),
+                          Container(
+                            width: size.width * 0.40,
+                            height: AppLayout.getHeight(190),
+                            decoration: BoxDecoration(
+                                color: Styles.orangeColor,
+                                borderRadius: BorderRadius.circular(21)),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  'Take love',
+                                  style: Styles.headLineStyle2.copyWith(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      '🥰',
+                                      style: Styles.headLineStyle2.copyWith(
+                                        color: Colors.white,
+                                        fontSize: 33,
+                                      ),
+                                    ),
+                                    Gap(AppLayout.getHeight(10)),
+                                    Text(
+                                      '💕',
+                                      style: Styles.headLineStyle2.copyWith(
+                                        color: Colors.white,
+                                        fontSize: 44,
+                                      ),
+                                    ),
+                                    Text(
+                                      '😘',
+                                      style: Styles.headLineStyle2.copyWith(
+                                        fontSize: 33,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                      // Gap(AppLayout.getHeight(10)),
+                    ],
+                  ),
+                )
               ],
             ),
           ],
