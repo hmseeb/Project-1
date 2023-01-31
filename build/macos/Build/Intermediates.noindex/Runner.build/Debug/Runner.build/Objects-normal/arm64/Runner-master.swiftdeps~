@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "72e8f62f70558a3e817f509bb165f77eb730989513d4503817128a35360b25d0"
+build_start_time: [1675168427, 568652153]
+build_end_time: [1675168427, 802875041]
+inputs:
+  "/Users/seeb/CodeCamp/project 1/macos/Flutter/GeneratedPluginRegistrant.swift": !private [1675168418, 28767585]
+  "/Users/seeb/CodeCamp/project 1/macos/Runner/AppDelegate.swift": !private [1674585417, 0]
+  "/Users/seeb/CodeCamp/project 1/macos/Runner/MainFlutterWindow.swift": !private [1674585417, 0]
