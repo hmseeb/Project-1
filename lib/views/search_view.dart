@@ -195,34 +195,49 @@ class Search extends StatelessWidget {
                       Gap(AppLayout.getHeight(20)),
                       Column(
                         children: [
-                          Container(
-                            padding: const EdgeInsets.symmetric(vertical: 14),
-                            width: size.width * 0.40,
-                            height: AppLayout.getHeight(190),
-                            decoration: BoxDecoration(
-                                color: Colors.cyan[600],
-                                borderRadius: BorderRadius.circular(21)),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'Discount\nfor survey',
-                                  style: Styles.headLineStyle2.copyWith(
-                                    color: Colors.white60,
-                                  ),
-                                ),
-                                Gap(AppLayout.getHeight(6)),
-                                Text(
-                                  textAlign: TextAlign.left,
-                                  'Take the survey\nabout our\nservices and\nget a discount',
-                                  style: Styles.textStyle.copyWith(
-                                      fontSize: 17,
+                          Stack(children: [
+                            Container(
+                              padding: const EdgeInsets.symmetric(vertical: 14),
+                              width: size.width * 0.40,
+                              height: AppLayout.getHeight(190),
+                              decoration: BoxDecoration(
+                                  color: Colors.cyan[600],
+                                  borderRadius: BorderRadius.circular(21)),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Discount\nfor survey',
+                                    style: Styles.headLineStyle2.copyWith(
                                       color: Colors.white60,
-                                      fontWeight: FontWeight.bold),
-                                )
-                              ],
+                                    ),
+                                  ),
+                                  Gap(AppLayout.getHeight(6)),
+                                  Text(
+                                    textAlign: TextAlign.left,
+                                    'Take the survey\nabout our\nservices and\nget a discount',
+                                    style: Styles.textStyle.copyWith(
+                                        fontSize: 17,
+                                        color: Colors.white60,
+                                        fontWeight: FontWeight.bold),
+                                  )
+                                ],
+                              ),
                             ),
-                          ),
+                            Positioned(
+                              top: -45,
+                              right: -40,
+                              child: Container(
+                                padding: const EdgeInsets.all(30),
+                                decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    color: Colors.transparent,
+                                    border: Border.all(
+                                        width: 12,
+                                        color: const Color(0xFF189999))),
+                              ),
+                            )
+                          ]),
                           Gap(AppLayout.getHeight(20)),
                           Container(
                             width: size.width * 0.40,
