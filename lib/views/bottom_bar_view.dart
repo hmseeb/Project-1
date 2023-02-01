@@ -1,3 +1,4 @@
+import 'package:brain_bite/views/account_view.dart';
 import 'package:brain_bite/views/home_view.dart';
 import 'package:brain_bite/views/search_view.dart';
 import 'package:brain_bite/views/ticket_screen.dart';
@@ -14,7 +15,7 @@ class _BottomBarState extends State<BottomBar> {
     const Home(),
     const Search(),
     const TicketView(),
-    const Text('Profile'),
+    const AccountView(),
   ];
 
   int _selectedIndex = 0;

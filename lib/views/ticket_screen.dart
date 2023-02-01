@@ -1,7 +1,7 @@
 import 'package:barcode_widget/barcode_widget.dart';
 import 'package:brain_bite/utils/app_layout.dart';
 import 'package:brain_bite/utils/info_list.dart';
-import 'package:brain_bite/views/ticket_view.dart';
+import 'package:brain_bite/views/single_ticket.dart';
 import 'package:brain_bite/widgets/selector.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';

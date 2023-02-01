@@ -2,7 +2,7 @@ import 'package:brain_bite/utils/app_layout.dart';
 import 'package:brain_bite/utils/info_list.dart';
 import 'package:brain_bite/utils/styles.dart';
 import 'package:brain_bite/views/hotel_view.dart';
-import 'package:brain_bite/views/ticket_view.dart';
+import 'package:brain_bite/views/single_ticket.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
