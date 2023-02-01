@@ -8,6 +8,18 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "barcode",
+      "rootUri": "file:///Users/seeb/.pub-cache/hosted/pub.dev/barcode-2.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "barcode_widget",
+      "rootUri": "file:///Users/seeb/.pub-cache/hosted/pub.dev/barcode_widget-2.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "boolean_selector",
       "rootUri": "file:///Users/seeb/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1",
       "packageUri": "lib/",
@@ -116,6 +128,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "qr",
+      "rootUri": "file:///Users/seeb/.pub-cache/hosted/pub.dev/qr-3.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///Users/seeb/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -176,7 +194,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-01-31T13:19:23.609594Z",
+  "generated": "2023-02-01T05:39:11.954518Z",
   "generator": "pub",
   "generatorVersion": "2.19.0"
 }

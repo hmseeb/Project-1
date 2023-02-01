@@ -2,6 +2,7 @@ import 'package:brain_bite/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import '../utils/app_layout.dart';
+import '../widgets/selector.dart';
 
 class Search extends StatelessWidget {
   const Search({super.key});
@@ -22,51 +23,11 @@ class Search extends StatelessWidget {
                     Text(
                       'What are\nyou looking for?',
                       style: Styles.headLineStyle1.copyWith(fontSize: 40),
-                    )
+                    ),
                   ],
                 ),
                 Gap(AppLayout.getHeight(20)),
-                FittedBox(
-                  child: Container(
-
-                      // width: size.width * 0.88,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: const Color(0xFFF4F6FD),
-                      ),
-                      child: Row(
-                        children: [
-                          Container(
-                            padding: EdgeInsets.symmetric(
-                                vertical: AppLayout.getHeight(14)),
-                            alignment: Alignment.center,
-                            width: size.width * 0.44,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              color: Colors.white,
-                            ),
-                            child: Text(
-                              'Airline Tickets',
-                              style: Styles.textStyle.copyWith(fontSize: 18),
-                            ),
-                          ),
-                          Container(
-                            padding: EdgeInsets.symmetric(
-                                vertical: AppLayout.getHeight(10)),
-                            alignment: Alignment.center,
-                            width: size.width * 0.44,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              color: const Color(0xFFF4F6FD),
-                            ),
-                            child: Text(
-                              'Airline Tickets',
-                              style: Styles.textStyle.copyWith(fontSize: 18),
-                            ),
-                          )
-                        ],
-                      )),
-                ),
+                selector(size, 'Airline Tickets', 'Air'),
                 Gap(AppLayout.getHeight(30)),
                 Container(
                   height: AppLayout.getHeight(50),

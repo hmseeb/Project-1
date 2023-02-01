@@ -88,7 +88,12 @@ class Home extends StatelessWidget {
                     children: ticketList
                         .map((ticket) => Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Ticket(ticket: ticket),
+                              child: Ticket(
+                                ticket: ticket,
+                                bottomColor: Styles.orangeColor,
+                                topColor: const Color(0xFF526799),
+                                textColor: Colors.white,
+                              ),
                             ))
                         .toList(),
                   ),

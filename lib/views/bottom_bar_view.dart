@@ -1,5 +1,6 @@
 import 'package:brain_bite/views/home_view.dart';
 import 'package:brain_bite/views/search_view.dart';
+import 'package:brain_bite/views/ticket_screen.dart';
 import 'package:flutter/material.dart';
 
 class BottomBar extends StatefulWidget {
@@ -12,7 +13,7 @@ class _BottomBarState extends State<BottomBar> {
   static final List<Widget> _widgetOptions = <Widget>[
     const Home(),
     const Search(),
-    const Text('Tickets'),
+    const TicketView(),
     const Text('Profile'),
   ];
 
